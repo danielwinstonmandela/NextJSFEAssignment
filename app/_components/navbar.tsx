@@ -11,7 +11,7 @@ export default function Navbar() {
     ]
 
     return (
-        <nav className="bg-blue-600 text=white flex gap-8 py-4 px-8">
+        <nav className="navbar sticky top-0 bg-blue-600 text=white flex gap-8 py-4 px-8">
             {links.map(link => (
                 <Link href={link.href} style={pathname == link.href ? {textDecorationLine: "underline"}: {}}>{link.label}</Link>
             ))}
